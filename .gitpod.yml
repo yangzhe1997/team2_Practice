@@ -7,7 +7,17 @@ tasks:
   - name: "Install Ubuntu Packages"
     command: |
       sudo apt-get update
-      sudo apt-get install -y mysql-client vim ip-utils-ping net-tools
+      sudo apt-get install -y mysql-client vim wget iputils-ping net-tools netcat-traditional
+      # 安装ping
+      # sudo apt-get install -y iputils-ping
+      # 安装vim
+      # sudo apt-get install -y vim
+      # 安装wget
+      # sudo apt-get install -y wget
+      # 安装arp
+      # sudo apt-get install -y net-tools
+      # 安装nc
+      # sudo apt-get -y install netcat-traditional
 
 
 # # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
